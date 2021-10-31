@@ -1,0 +1,16 @@
+
+## minikube Commands
+
+## kubectl Command
+ * kubectl status
+
+ * kubectl get nodes 
+
+ * k describe pod <pod name>
+
+ * k run redis --image=redis --dry-run=client -o yaml > pod-desc.yaml
+ * k edit pod <pod name>   # to take the yaml file of running pod in to edit  
+ * k replace -f replicaset-def.yaml
+ * k scale --replicas=6 -f replicaset-def.yaml # proide old file
+ * k scale --replicas=6 replicaset <replicaset name>
+ * k create -f  # Creates any object based on the file provided
