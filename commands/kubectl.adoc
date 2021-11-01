@@ -14,3 +14,11 @@
  * k scale --replicas=6 -f replicaset-def.yaml # proide old file
  * k scale --replicas=6 replicaset <replicaset name>
  * k create -f  # Creates any object based on the file provided
+
+ * k get deployments
+ * k set image deployment/<deploymentname> ngnix=ngnix:1.9.1
+ * k rollout status deployment/<deployment name>
+ * k rollout history deployment/<deployment name>
+ * k rollout undo deployment/<deployment name>
+
+ 
